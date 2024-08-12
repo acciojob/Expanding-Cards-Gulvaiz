@@ -1,45 +1,49 @@
-/*  your css code here. If applicable */
-
- *{
+* {
   box-sizing: border-box;
- }
+}
 
-  .container{
-     display: flex;
-     width: 90%;
-     margin: auto;
-     margin-top: 50px;
-     overflow: hidden;
-     max-width: 1000px;
-  }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
- 
-  .panel{
-     display: flex;
-     width: 100vh;
-     height: 70vh;
-     border-radius: 10px;
-     margin: 10px;
-     text-align: center;
-     flex: 1;
-     box-shadow: 0 10px 10px gray;
-     transition: all 0.3s ease-in-out;
-     background-size: cover;
-    background-position: center;
+.container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  overflow: hidden;
+  max-width: 1000px;
+}
 
-  }
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 70vh;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  transition: flex 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 10px 10px gray;
+}
 
-  h3{
-      color: white;
-      opacity: 0.6;
-      font-size: 24px;
-      transition: opacity 0.3s ease-in-out;
-  }
+.panel h3 {
+  color: white;
+  opacity: 0.6;
+  font-size: 24px;
+  transition: opacity 0.3s ease-in-out;
+}
 
-  .active{
-      flex: 5;
-  }
+.panel.active {
+  flex: 5;
+}
 
-  .active h3{
-      opacity: 1;
-  }
+.panel.active h3 {
+  opacity: 1;
+}
