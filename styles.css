@@ -13,6 +13,7 @@
      max-width: 1000px;
   }
 
+ 
   .panel{
      display: flex;
      width: 100vh;
@@ -22,14 +23,17 @@
      text-align: center;
      flex: 1;
      box-shadow: 0 10px 10px gray;
-     transition: all 0.3 ease-in-out;
+     transition: all 0.3s ease-in-out;
+     background-size: cover;
+    background-position: center;
+
   }
 
   h3{
       color: white;
       opacity: 0.6;
       font-size: 24px;
-      transition: opacity 0.3 ease-in-out;
+      transition: opacity 0.3s ease-in-out;
   }
 
   .active{

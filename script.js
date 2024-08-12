@@ -8,10 +8,8 @@
           })
      })
 
-     function removeAllClasses(){
-         panels.forEach((panel) => {
-               panel.addEventListener("click", () => {
-                      panel.classList.remove("active")
-               })
-         }) 
-     }
+      function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active');
+    });
+}
